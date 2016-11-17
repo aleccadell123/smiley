@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+	background-color: moccasin;
+	height: 1000px;
+	position: relative;
+}
+
+.banner {
+	font-size: 4rem;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+
+.face {
+	background: yellow;
+	border: black solid 1px;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	position: fixed;
+	left: 50%; top:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+.eyes {
+	background: black;
+	border-radius: 50%;
+	display:inline-block;
+	height:30px; 
+	width: 30px;
+	position: absolute;
+	top:25%;
+}
+
+.left-eye{
+	left:25%;
+}
+
+.right-eye {
+	right:25%;
+}
+
+.mouth {
+	background-color: black;
+	width:125px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	top: 45%;
+	left:19%;
+}
+
+.mouthopen {
+	background-color: yellow;
+	width:125px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+	top: 40%;
+	left:19%;
+}
+
+.eyebrows{
+	width:0px;
+	height:0px;
+	border-top: 40px solid black;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 40px solid transparent;
+	position: relative;
+	left: 50%; top:10%;
+	transform: translate(-50%);
+	display: none;
+}
+
+.eyebrow-mask{
+	width:0px;
+	height:0px;
+	border-top: 40px solid yellow;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	border-left: 40px solid transparent;
+	position: relative;
+	left: 50%; top:-70px;
+	transform: translate(-50%);
+	z-index: 1;
+	display: none;
+	
+}
+
+.speech {
+	background-color: white;
+	font-size: 10rem;
+	width: 400px;
+	border-radius: 50px 50px 50px 0;
+	text-align: center;
+	position: fixed;
+	top:15%;
+	right:8%;
+	padding: 0 0 0 10px;
+	display: none;
+}
+
+.face:hover .mouthopen {
+	top:60%;
+}
+.face:hover .mouth {
+	top:55%;
+}
+.face:hover + .speech {
+	display: block;
+}
+.face:hover .eyebrows {
+	display: block;
+}
+.face:hover .eyebrow-mask {
+	display: block;
+}
+
+
