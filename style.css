@@ -7,13 +7,19 @@ header {
 	text-align: center;
 	background-color: moccasin;
 	height: 1000px;
+	max-height: 100vh;
 	position: relative;
 }
 
 .banner {
-	font-size: 4rem;
+	font-size: 2rem;
 	font-family: "Courier New", Courier, monospace;
 	font-weight: bold;
+}
+@media (min-width: 615px) {
+	.banner {
+		font-size: 4rem;
+	}
 }
 
 .face {
