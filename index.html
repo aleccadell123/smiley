@@ -5,9 +5,9 @@
 			<title>lazylearner</title>
 		</head>
 
-		<header>
+		<header id="back">
 				<div class="banner" ">Don't point at the smiley face!</div>
-				<div class="face">
+				<div class="face" onmouseover="redBack()" onmouseout="normBack()">
 						<div class="eyebrows"></div>
 						<div class="eyebrow-mask"></div>
 						<div class="eyes left-eye"></div>
@@ -19,5 +19,13 @@
 		</header>
 
 		<body>
+		<script type="text/javascript">
+			function redBack() {
+				document.getElementById("back").style.backgroundColor = "red";
+			}
+			function normBack() {
+				document.getElementById("back").style.backgroundColor = "moccasin";
+			}
+		</script>
 		</body>
 	</html>
